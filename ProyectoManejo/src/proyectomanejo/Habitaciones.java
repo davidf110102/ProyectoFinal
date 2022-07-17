@@ -12,15 +12,19 @@ package proyectomanejo;
 public class Habitaciones {
      public static String hab;
     public static String cam;
-    String habitacion;
-    String cama;
-    String estado;
+    public String habitacion;
+    public String cama;
+    public String estado;
 
     public Habitaciones(String habitacion, String cama, String estado) {
         this.habitacion = habitacion;
         this.cama = cama;
         this.estado = estado;
 
+    }
+
+    public Habitaciones() {
+        
     }
 
     public void desplegar() {
