@@ -43,9 +43,9 @@ public class Habitaciones {
 
     }
 
-    public void editarhabitaciones(String habitaciones, String camas) {
-        habitacion = habitaciones;
-        cama = camas;
+    public void editarhabitaciones() {
+        habitacion = IngresoAltas.pasahabitacion;
+        cama = IngresoAltas.pasacama;
         estado = "OCUPADA";
         System.out.printf("%51s", "\033[34;1m habitación: " + habitacion);
         System.out.printf("%51s", "\033[34;1m Cama:       " + cama);
