@@ -25,4 +25,30 @@ public class Persona {
         this.telefono = telefono;
         this.especialidad = especialidad;
     }
+    
+    public void desplegar() {
+        System.out.println("Cédula      : " + cedula);
+        System.out.println("Nombre      : " + nombre);
+        System.out.println("Apellido    : " + apellido);
+        System.out.println("Dirección   : " + direccion);
+        System.out.println("Teléfono    : " + telefono);
+        System.out.println("Especialidad: " + especialidad);
+    }
+
+    public void desplegar2() {
+
+        System.out.println(cedula + "     " + nombre + "        " + apellido + "        " + direccion + "        " + telefono + "     " + especialidad);
+
+    }
+
+    public void desplegarmedico() {
+        System.out.println("Nombre Médico:    " + nombre);
+        System.out.println("Apellido Médico:  " + apellido);
+        System.out.println("Especialidad:     " + especialidad);
+        cm = cedula;
+        nm = nombre;
+        am = apellido;
+        //em=especialidad;
+
+    }
 }
