@@ -32,5 +32,45 @@ public class Personapacientes {
         this.observacion = observacion;
     }
     
-    
+    public void desplegar() {
+        System.out.println("Fecha Ingreso : " + fecha);
+        System.out.println("Cédula        : " + cedula);
+        System.out.println("Nombre        : " + nombre);
+        System.out.println("Apellido      : " + apellido);
+        System.out.println("Dirección     : " + direccion);
+        System.out.println("Teléfono      : " + telefono);
+        System.out.println("Pulso         : " + pulso);
+        System.out.println("Presión       : " + presion);
+        System.out.println("Temperatura   : " + temperatura);
+        System.out.println("Razón Ingreso : " + razon);
+        System.out.println("Cédula Médico : " + cedmedico);
+        System.out.println("Médico        : " + medico);
+        System.out.println("# Habitación  : " + habitacion);
+        System.out.println("# de Cama     : " + cama);
+        if ("OCUPADA".equals(observacion)) {
+            observacion = "HOSPITALIZADO";
+        }
+        System.out.println("Observación   : " + observacion);
+    }
+
+    public void desplegar2() {
+        if ("OCUPADA".equals(observacion)) {
+            observacion = "HOSPITALIZADO";
+        }
+        System.out.println("Fecha Ingreso : " + fecha);
+        System.out.println("Cédula        : " + cedula);
+        System.out.println("Nombre        : " + nombre);
+        System.out.println("Apellido      : " + apellido);
+        System.out.println("Dirección     : " + direccion);
+        System.out.println("Teléfono      : " + telefono);
+        System.out.println("Pulso         : " + pulso);
+        System.out.println("Presión       : " + presion);
+        System.out.println("Temperatura   : " + temperatura);
+        System.out.println("Razón Ingreso : " + razon);
+        System.out.println("Cédula Médico : " + cedmedico);
+        System.out.println("Médico        : " + medico);
+        System.out.println("# Habitación  : " + habitacion);
+        System.out.println("# de Cama     : " + cama);
+        System.out.println("Observación   : " + observacion);
+    }
 }
