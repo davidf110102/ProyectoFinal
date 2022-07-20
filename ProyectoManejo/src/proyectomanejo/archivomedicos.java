@@ -50,7 +50,7 @@ public class archivomedicos {
                 FileReader fr = new FileReader(f);
                 BufferedReader br = new BufferedReader(fr);
                 String linea, buscacedula;
-                System.out.print("Ingrese la cédula: ");
+                System.out.print("INGRESE LA CÉDULA: ");
                 buscacedula = (tecla.next().toUpperCase());
                 while ((linea = br.readLine()) != null) {
                     String[] contacto = linea.split(",");
@@ -63,11 +63,11 @@ public class archivomedicos {
 
                 }
                 if (x == 0) {
-                    System.out.println("Registro Médico no existe: ");
+                    System.out.println("REGISTRO MEDICO NO EXISTE: ");
 
                 }
             } else {
-                System.out.println("Agenda de Médicos vacía");
+                System.out.println("AGENDA DE MEDICOS VACIA");
             }
         } catch (Exception e) {
             System.out.println(e);
@@ -87,7 +87,7 @@ public class archivomedicos {
                 FileReader fr = new FileReader(f);
                 BufferedReader br = new BufferedReader(fr);
                 String linea, buscacedula;
-                System.out.printf("Cédula Médico:    ");
+                System.out.printf("CÉDULA MEDICO:    ");
                 buscacedula = (tecla.next().toUpperCase());
                 while ((linea = br.readLine()) != null) {
                     String[] contacto = linea.split(",");
@@ -100,11 +100,11 @@ public class archivomedicos {
 
                 }
                 if (x == 0) {
-                    System.out.println("Registro Médico no existe: ");
+                    System.out.println("REGISTRO MEDICO NO EXISTE: ");
                 }
 
             } else {
-                System.out.println("Agenda de Médicos vacía");
+                System.out.println("AGENDA DE MEDICOS VACIA");
             }
         } catch (Exception e) {
             System.out.println(e);
