@@ -19,9 +19,9 @@ import proyectomanejo.IngresoAltas;
  * @author DELLWIN10
  */
 public class archivoHabitaciones {
-    String habitacion, habita;
-    String cama, cam;
-    String estado, est;
+    public String habitacion, habita;
+    public String cama, cam;
+    public String estado, est;
     Scanner tecla = new Scanner(System.in);
     public static Integer haycama;
     Habitaciones habitaciones = new Habitaciones();
