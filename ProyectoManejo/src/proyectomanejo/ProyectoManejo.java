@@ -28,7 +28,7 @@ public class ProyectoManejo {
         do {
             do {
                 
-                System.out.printf("%60s\n", "\u001B[44m H O S P I T A L");
+                System.out.printf("%60s\n", "\033[35;1m H O S P I T A L");
                 System.out.printf("%65s\n", "\u001B[32m 1.- Ingreso de datos Médicos");
                 System.out.printf("%65s\n", "\u001B[32m 2.- Ingreso Pacientes       ");
                 System.out.printf("%76s\n", "\u001B[32m 3.- Ver atributos de Objetos(consultas)");//buscar medicos o pacientes

@@ -31,13 +31,10 @@ public class consultaslistas {
 
         Scanner tecla = new Scanner(System.in);
         System.out.printf("%60s\n", "\033[35;1m C O N S U L T A S");
-        opciones.add("\033[34;1m 1.- LLENAR MÉDICOS");
-        opciones.add("\033[34;1m 2.- LISTA DE MÉDICOS");
-        opciones.add("\033[34;1m 3.- LLENAR PACIENTES");
-        opciones.add("\033[34;1m 4.- LISTA DE PACIENTES");
-        opciones.add("\033[34;1m 5.- LLENAR HABITACIONES");
-        opciones.add("\033[34;1m 6.- LISTA DE HABITACIONES");
-        opciones.add("\033[34;1m 7.- SALIR");
+        opciones.add("\033[34;1m 1.- LISTA DE MÉDICOS");
+        opciones.add("\033[34;1m 2.- LISTA DE PACIENTES");
+        opciones.add("\033[34;1m 3.- LISTA DE HABITACIONES");
+        opciones.add("\033[34;1m 4.- SALIR");
         while (repetir == true) {
             for (String i2 : opciones) {
                 System.out.printf(i2 + " \n");
@@ -48,23 +45,17 @@ public class consultaslistas {
             switch (op) {
                 case 1:
                     Llenarmedicos();
-                    break;
-                case 2:
                     vermedicos();
                     break;
-                case 3:
+                case 2:
                     Llenarpacientes();
-                    break;
-                case 4:
                     verpacientes();
                     break;
-                case 5:
+                case 3:
                     Llenarhabitaciones();
-                    break;
-                case 6:
                     verhabitaciones();
                     break;
-                case 7:
+                case 4:
                     repetir = false;
                     break;
             }

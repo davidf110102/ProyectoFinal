@@ -336,7 +336,7 @@ public void imprimir()
                     System.out.println("\n");
                     System.out.println("\u001B[31m Registro de pacientes vacío: ");
                 }
-                libres=totcamas-x;
+                libres=totcamas-x+alt;
                 System.out.printf("%60s\n","=================================");
                 System.out.printf("%63s\n","\033[34;1m Total de habitaciones   = "+tothabitaciones);
                 System.out.printf("%63s\n","\033[34;1m Camas por habitación    = 05");
