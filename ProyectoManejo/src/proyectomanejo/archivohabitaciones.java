@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Archivos;
+package proyectomanejo;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -14,11 +14,12 @@ import java.util.Scanner;
 import proyectomanejo.Habitaciones;
 import proyectomanejo.IngresoAltas;
 
+
 /**
  *
  * @author DELLWIN10
  */
-public class archivoHabitaciones {
+public class archivohabitaciones {
     public String habitacion, habita;
     public String cama, cam;
     public String estado, est;
