@@ -1,5 +1,6 @@
 
 
+
 package proyectomanejo;
 
 import java.io.BufferedReader;
@@ -111,4 +112,4 @@ public class archivomedicos {
 
     }
 
-}
+
