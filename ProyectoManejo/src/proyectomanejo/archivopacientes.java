@@ -1,8 +1,8 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
+
+
 package proyectomanejo;
+
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -11,12 +11,9 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.util.Scanner;
 
-/**
- *
- * @author USUARIO
- */
 public class archivopacientes {
-    public static String ced;
+    
+public static String ced;
 public static String hospitalizado;
 public static String pasahabitacion;
 public static String pasacama;
@@ -51,6 +48,7 @@ public void escribirpersona(Personapacientes nueva)
          System.out.println(e);       
          }
 }    
+
 
 public void imprimir()
     {
@@ -265,7 +263,7 @@ public void imprimir()
              pasacama=cont[13];
              bw.write(contactos[j]);
              archivohabitaciones e=new archivohabitaciones();
-             e.modificarHabitacionAltas(new Habitaciones(e.habitacion,e.cama,e.estado));
+             e.modificarhabitacionaltas(new Habitaciones(e.habitacion,e.cama,e.estado));
          }
          else
          {
