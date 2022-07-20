@@ -10,12 +10,12 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 
-/**
- *
- * @author USUARIO
- */
+
+
+
+
 public class archivopacientes {
-    public static String ced;
+public static String ced;
 public static String hospitalizado;
 public static String pasahabitacion;
 public static String pasacama;
@@ -50,6 +50,7 @@ public void escribirpersona(Personapacientes nueva)
          System.out.println(e);       
          }
 }    
+
 
 public void imprimir()
     {
