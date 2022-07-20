@@ -27,13 +27,14 @@ public class ProyectoManejo {
         //Control de ingreso de la opción (1 - 6)
         do {
             do {
-                System.out.printf("%60s\n", "\033[35;1m H O S P I T A L");
-                System.out.printf("%65s\n", "\033[34;1m 1.- Ingreso de datos Médicos");
-                System.out.printf("%65s\n", "\033[34;1m 2.- Ingreso Pacientes       ");
-                System.out.printf("%76s\n", "\033[34;1m 3.- Ver atributos de Objetos(consultas)");//buscar medicos o pacientes
-                System.out.printf("%56s\n", "\033[34;1m 4.- Datos Generales");
-                System.out.printf("%66s\n", "\033[34;1m 5.- Altas pacientes          ");
-                System.out.printf("%46s\n", "\033[34;1m 6.- Salir");
+                
+                System.out.printf("%60s\n", "\u001B[44m H O S P I T A L");
+                System.out.printf("%65s\n", "\u001B[32m 1.- Ingreso de datos Médicos");
+                System.out.printf("%65s\n", "\u001B[32m 2.- Ingreso Pacientes       ");
+                System.out.printf("%76s\n", "\u001B[32m 3.- Ver atributos de Objetos(consultas)");//buscar medicos o pacientes
+                System.out.printf("%56s\n", "\u001B[32m 4.- Datos Generales");
+                System.out.printf("%66s\n", "\u001B[32m 5.- Altas pacientes          ");
+                System.out.printf("%46s\n", "\u001B[32m 6.- Salir");
                 
                 System.out.printf("%56s", "\033[35;1m Ingrese la Opción(1 a 6): ");
 
