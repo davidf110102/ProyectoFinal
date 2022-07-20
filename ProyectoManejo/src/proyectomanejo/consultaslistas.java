@@ -31,18 +31,18 @@ public class consultaslistas {
 
         Scanner tecla = new Scanner(System.in);
         System.out.printf("%60s\n", "\033[35;1m C O N S U L T A S");
-        opciones.add("\033[34;1m 1.- Llenar Médicos");
-        opciones.add("\033[34;1m 2.- Lista de médicos");
-        opciones.add("\033[34;1m 3.- Llenar pacientes");
-        opciones.add("\033[34;1m 4.- Lista de pacientes");
-        opciones.add("\033[34;1m 5.- Llenar habitaciones");
-        opciones.add("\033[34;1m 6.- Lista de habitaciones");
-        opciones.add("\033[34;1m 7.- Salir");
+        opciones.add("\033[34;1m 1.- LLENAR MÉDICOS");
+        opciones.add("\033[34;1m 2.- LISTA DE MÉDICOS");
+        opciones.add("\033[34;1m 3.- LLENAR PACIENTES");
+        opciones.add("\033[34;1m 4.- LISTA DE PACIENTES");
+        opciones.add("\033[34;1m 5.- LLENAR HABITACIONES");
+        opciones.add("\033[34;1m 6.- LISTA DE HABITACIONES");
+        opciones.add("\033[34;1m 7.- SALIR");
         while (repetir == true) {
             for (String i2 : opciones) {
                 System.out.printf(i2 + " \n");
             }
-            System.out.printf("%56s", "\033[35;1m Ingrese la Opción: ");
+            System.out.printf("%56s", "\033[35;1m INGRESE UNA OPCIÓN: ");
             //op=Integer.valueOf(tecla.nextInt());
             op = tecla.nextInt();
             switch (op) {
