@@ -32,7 +32,8 @@ public class ProyectoManejo {
                 System.out.printf("%65s\n", "\033[34;1m 2.- Ingreso Pacientes       ");
                 System.out.printf("%76s\n", "\033[34;1m 3.- Ver atributos de Objetos(consultas)");//buscar medicos o pacientes
                 System.out.printf("%56s\n", "\033[34;1m 4.- Datos Generales");
-                System.out.printf("%66s\n", "\033[34;1m 5.- Altas pacientes          ");  
+                System.out.printf("%66s\n", "\033[34;1m 5.- Altas pacientes          ");
+                System.out.printf("%46s\n", "\033[34;1m 6.- Salir");
                 
                 System.out.printf("%56s", "\033[35;1m Ingrese la Opción(1 a 6): ");
 
