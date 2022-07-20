@@ -73,11 +73,11 @@ public class archivohabitaciones {
 
                 }
                 if (x == 0) {
-                    //System.out.println("Registro de Habitaciones no existe: ");
+                    //System.out.println("\u001B[31m Registro de Habitaciones no existe: ");
                     haycama = 0;
                 }
             } else {
-                System.out.println("Agenda de Habitaciones vacía");
+                System.out.println("\u001B[31m Agenda de Habitaciones vacía");
             }
         } catch (Exception e) {
             System.out.println(e);
@@ -104,7 +104,7 @@ public class archivohabitaciones {
                     }
                 }
             } else {
-                System.out.println("Agenda de Habitaciones vacía");
+                System.out.println("\u001B[31m Agenda de Habitaciones vacía");
             }
         } catch (Exception e) {
             System.out.println(e);
@@ -248,7 +248,7 @@ public class archivohabitaciones {
                 }
 
             } else {
-                System.out.println("Agenda de Habitaciones vacía");
+                System.out.println("\u001B[31m Agenda de Habitaciones vacía");
             }
         } catch (Exception e) {
             System.out.println(e);
@@ -281,7 +281,7 @@ public class archivohabitaciones {
                 }
 
             } else {
-                System.out.println("Agenda de Habitaciones vacía");
+                System.out.println("\u001B[31m Agenda de Habitaciones vacía");
             }
         } catch (Exception e) {
             System.out.println(e);
