@@ -75,42 +75,45 @@ public class archivomedicos {
 
     }
 
-    //BUSCAR MEDICOS PARA INGRESO
+       //BUSCAR CAMBIO DE VALIDACION MEDICOS PARA INGRESO
     public void buscarmedicosingreso() {
-        Integer x = 0;
+        Integer n = 0;
 
         try {
-            x = 0;
+            n = 0;
             Scanner tecla = new Scanner(System.in);
+            //Validacion a traves del archivo medicos.txt
             File f = new File("medicos.txt");
             if (f.exists()) {
                 FileReader fr = new FileReader(f);
                 BufferedReader br = new BufferedReader(fr);
                 String linea, buscacedula;
-                System.out.printf("CÉDULA MEDICO:    ");
+                System.out.printf("Cédula Médico:    ");
+                // UpperCase a la cedula que se busca.
                 buscacedula = (tecla.next().toUpperCase());
                 while ((linea = br.readLine()) != null) {
                     String[] contacto = linea.split(",");
                     Persona p = new Persona(contacto[0], contacto[1], contacto[2], contacto[3], contacto[4], contacto[5]);
                     if (buscacedula.equals(contacto[0])) {
                         p.desplegarmedico();
-                        x = 1;
+                        n = 1;
                         break;
                     }
 
                 }
-                if (x == 0) {
+                if (n == 0) {
                     System.out.println("REGISTRO MEDICO NO EXISTE: ");
                 }
 
             } else {
                 System.out.println("AGENDA DE MEDICOS VACIA");
             }
-        } catch (Exception e) {
-            System.out.println(e);
+        } catch (Exception ex) {
+            System.out.println(ex);
         }
 
     }
+
 }
 
 
