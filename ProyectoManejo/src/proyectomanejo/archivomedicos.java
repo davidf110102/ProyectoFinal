@@ -76,5 +76,41 @@ public class archivomedicos {
         }
 
     }
+    
+      //BUSCAR MEDICOS PARA INGRESO
+    public void buscarmedicosingreso() {
+        Integer x = 0;
+        try {
+            x = 0;
+            Scanner tecla = new Scanner(System.in);
+            File f = new File("medicos.txt");
+            if (f.exists()) {
+                FileReader fr = new FileReader(f);
+                BufferedReader br = new BufferedReader(fr);
+                String linea, buscacedula;
+                System.out.printf("Cédula Médico:    ");
+                buscacedula = (tecla.next().toUpperCase());
+                while ((linea = br.readLine()) != null) {
+                    String[] contacto = linea.split(",");
+                    Persona p = new Persona(contacto[0], contacto[1], contacto[2], contacto[3], contacto[4], contacto[5]);
+                    if (buscacedula.equals(contacto[0])) {
+                        p.desplegarmedico();
+                        x = 1;
+                        break;
+                    }
+
+                }
+                if (x == 0) {
+                    System.out.println("Registro Médico no existe: ");
+                }
+
+            } else {
+                System.out.println("Agenda de Médicos vacía");
+            }
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+
+    }
 
 }
