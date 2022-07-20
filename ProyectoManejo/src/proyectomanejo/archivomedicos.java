@@ -1,8 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
+
 package proyectomanejo;
 
 import java.io.BufferedReader;
@@ -11,13 +8,12 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.util.Scanner;
+import proyectomanejo.Persona;
 
-/**
- *
- * @author Lizard
- */
+
+
 public class archivomedicos {
-    
+
     public void escribirpersona(Persona nueva) {
         try {
             File f = new File("medicos.txt");
@@ -41,8 +37,9 @@ public class archivomedicos {
             System.out.println(e);
         }
     }
-    
-    //BUSCAR MEDICOS
+
+
+//BUSCAR MEDICOS
     public void buscarmedicos() {
         try {
             Integer x = 0;
@@ -76,10 +73,11 @@ public class archivomedicos {
         }
 
     }
-    
-      //BUSCAR MEDICOS PARA INGRESO
+
+    //BUSCAR MEDICOS PARA INGRESO
     public void buscarmedicosingreso() {
         Integer x = 0;
+
         try {
             x = 0;
             Scanner tecla = new Scanner(System.in);
