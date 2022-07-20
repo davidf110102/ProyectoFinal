@@ -1,7 +1,6 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
+
+
 package proyectomanejo;
 
 
@@ -264,7 +263,7 @@ public void imprimir()
              pasacama=cont[13];
              bw.write(contactos[j]);
              archivohabitaciones e=new archivohabitaciones();
-             e.modificarHabitacionAltas(new Habitaciones(e.habitacion,e.cama,e.estado));
+             e.modificarhabitacionaltas(new Habitaciones(e.habitacion,e.cama,e.estado));
          }
          else
          {
