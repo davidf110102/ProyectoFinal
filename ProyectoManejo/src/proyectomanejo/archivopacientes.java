@@ -71,7 +71,7 @@ public void imprimir()
             }
             else
             {
-                System.out.println("Agenda de Pacientes vacía");
+                System.out.println("\u001B[31m Agenda de Pacientes vacía");
             }
         }
         catch(Exception e)
@@ -109,12 +109,12 @@ public void imprimir()
                  }
                 if (x==0)
                 {
-                    System.out.println("Registro de pacientes no existe: ");
+                    System.out.println("\u001B[31m Registro de pacientes no existe: ");
                 }
             }
             else
             {
-                System.out.println("Agenda de Pacientes vacía");
+                System.out.println("\u001B[31m Agenda de Pacientes vacía");
             }
         }
         catch(Exception e)
@@ -191,14 +191,14 @@ public void imprimir()
                         }
                         else
                         {
-                            System.out.print("Paciente no está hospitalizado..");
+                            System.out.print("\u001B[31m Paciente no está hospitalizado..");
                         }
 
                 }
             }
             else
             {
-                System.out.println("Agenda de Pacientes vacía");
+                System.out.println("\u001B[31m Agenda de Pacientes vacía");
             }
         }
         catch(Exception e)
@@ -334,7 +334,7 @@ public void imprimir()
                 if (x==0)
                 {
                     System.out.println("\n");
-                    System.out.println("Registro de pacientes vacío: ");
+                    System.out.println("\u001B[31m Registro de pacientes vacío: ");
                 }
                 libres=totcamas-x;
                 System.out.printf("%60s\n","=================================");
@@ -350,7 +350,7 @@ public void imprimir()
             }
             else
             {
-                System.out.println("Agenda de Pacientes vacía");
+                System.out.println("\u001B[31m Agenda de Pacientes vacía");
             }
         }
         catch(Exception e)

@@ -63,11 +63,11 @@ public class archivomedicos {
 
                 }
                 if (x == 0) {
-                    System.out.println("REGISTRO MEDICO NO EXISTE: ");
+                    System.out.println("\u001B[31m Registro Médico no existe: ");
 
                 }
             } else {
-                System.out.println("AGENDA DE MEDICOS VACIA");
+                System.out.println("\u001B[31m Agenda de Médicos vacía");
             }
         } catch (Exception e) {
             System.out.println(e);
@@ -100,11 +100,11 @@ public class archivomedicos {
 
                 }
                 if (x == 0) {
-                    System.out.println("REGISTRO MEDICO NO EXISTE: ");
+                    System.out.println("\u001B[31m Registro Médico no existe: ");
                 }
 
             } else {
-                System.out.println("AGENDA DE MEDICOS VACIA");
+                System.out.println("\u001B[31m Agenda de Médicos vacía");
             }
         } catch (Exception e) {
             System.out.println(e);
