@@ -5,7 +5,7 @@
  */
 package proyectomanejo;
 
-import Archivos.archivoHabitaciones;
+
 import java.util.Scanner;
 
 /**
@@ -201,9 +201,9 @@ public class IngresoAltas {
         setingresoobservacion(tecla.next().toUpperCase());
         if ("INGRESO".equals(observacion)) {
             //busca habitaciones y camas
-            archivoHabitaciones e = new archivoHabitaciones();
+            archivohabitaciones e = new archivohabitaciones();
             e.buscarhabitaciones();
-            if (archivoHabitaciones.haycama == 0) {
+            if (archivohabitaciones.haycama == 0) {
                 habitacion = "NO_HAY_HABITACIÓN";
                 cama = "NO_HAY_CAMA";
                 observacion = "ESPERA";
@@ -236,7 +236,7 @@ public class IngresoAltas {
         if ("S".equals(grabar)) {
              archivopacientes b = new archivopacientes();
             b.escribirpersona(new Personapacientes(fecha, cedula, nombre, apellido, direccion, telefono, pulso, presion, temperatura, razon, cedmedico, medico, habitacion, cama, observacion));
-            archivoHabitaciones e = new archivoHabitaciones();
+            archivohabitaciones e = new archivohabitaciones();
             e.modificarhabitacion(new Habitaciones(e.habitacion, e.cama, e.estado));
 
         }
